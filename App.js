@@ -16,18 +16,11 @@ export default function App(){
   // ----- LIST OF TASKS 
   const [list,setList] = useState([
     {text:"Tap to change tag color",color:colors[0], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()}, 
-    {text:"Swipe right to delete to delete",color:colors[2], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
-    {text:"Swipe left to mark as complated ",color:colors[3], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
-    {text:"Swipe left to mark as complated ",color:colors[4], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
-    {text:"Swipe left to mark as complated ",color:colors[5], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
-    {text:"Swipe left to mark as complated ",color:colors[5], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
-    {text:"Swipe left to mark as complated ",color:colors[5], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
-    {text:"Swipe left to mark as complated ",color:colors[5], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
-    {text:"Swipe left to mark as complated ",color:colors[4], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
-    {text:"Swipe left to mark as complated ",color:colors[5], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
-    {text:"Swipe left to mark as complated ",color:colors[6], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
+    {text:"Swipe right to delete to delete",color:colors[1], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
+    {text:"Swipe left to mark as complated ",color:colors[2], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
     {text:"Swipe left to turn incomplated ",color:colors[colors.length-1], oldColor:colors[0], selected:false, icon:1, style:{paddingVertical:3,textAlign:"center", color:colors[colors.length-1],fontSize:17, textDecorationLine: 'line-through', textDecorationStyle: 'solid'}, key:Math.floor(Math.random()*10**12).toString()},
-  ])
+    {text:"Long press to multiple selection",color:colors[3], oldColor:false, selected:false, icon:0, style:{paddingVertical:3,textAlign:"center", fontSize:17,}, key:Math.floor(Math.random()*10**12).toString()},
+])
   
 
   const getFilters=()=>{
